@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.container {
+    background-color: aqua;
+    display: inline-grid;
+    gap: 15px;
+    grid-template: 80px 80px 400px 80px / 250px 750px;
+    grid-template-areas: 
+        "header header"
+        "sidebar nav"
+        "sidebar article"
+        "footer footer";
+}
+
+.area {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+    
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#article {
+    grid-area: article;
+}
+
+#footer {
+    grid-area: footer;
+}
